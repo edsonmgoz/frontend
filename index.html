@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUD</title>
+  <link rel="stylesheet" href="recursos/bootstrap-4.3.1/dist/css/bootstrap.min.css">
+  <script src="recursos/jsd/jquery.js"></script>
+  <script type="text/javascript" src="frontend.js"></script>
+</head>
+<body>
+ 
+  <center><h1>APLICACION FRONTEND</h1></center>
+  <div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8">
+
+    <h2>FORMULARIO</h2>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputAddress">MENSSAGE</label>
+          <input type="text" class="form-control" name ="txtvalora" id ="txtvalora" >
+        </div>
+        <div class="form-group col-md-6">
+            <button type="button" class="btn btn-primary" onclick="guardarDatos()">Guardar</button>  
+        </div> 
+      </div>
+      
+   
+
+    <h2>Lista productos</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">ID</th>
+          <th scope="col">MENSSAGE</th>
+          <th scope="col">STATE</th>
+          <th scope="col">fechaRegistro</th>          
+          <th scope="col">fechaRecepcion</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpo">
+        
+        
+      </tbody>
+    </table>
+  </div>
+  <div class="col-lg-2">
+    
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+      inicio();
+  });
+</script>
+
+</body>
+<footer>
+  <script src="recursos/jsd/jquery.min.js"></script>
+  <script src="recursos/bootstrap-4.3.1/dist/js/bootstrap.min.js"></script>
+  <script src="recursos/bootstrap-4.3.1/dist/js/popper.min.js"></script>
+</footer>
+</html>
